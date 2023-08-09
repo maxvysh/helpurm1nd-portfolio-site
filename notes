@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background: url(BACKGROUND.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #9e4b60;
+    text-align: center;
+    font-family: arial;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#top-left {
+    text-align: left;
+    margin-left: 1%;
+}
+
+#center-artists {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 96%;
+}
+
+#artists {
+    color: #49abf0;
+}
+
+a {
+    text-decoration: none;
+    color: #9e4b60;
+}
+
+a:hover {
+    color: #49abf0;
+}
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 8px;
+        /* white-space: nowrap;  */
+    }
+}
+
+@media screen and (max-width: 420px) and (max-height: 350px){
+    html {
+        font-size: 6px;
+    }
+
+    #top-left {
+        position: static;
+        transform: 0;
+        text-align: center;
+    }
+
+    #center-artists {
+        position: static;
+        transform: translate(0);
+        text-align: center;
+        width: 100%;
+    }
+
+    #long-name {
+        font-size: 5rem;
+    }
+}

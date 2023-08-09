@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background: url(BACKGROUND.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #9e4b60;
+    text-align: center;
+    font-family: arial;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#top-left {
+    text-align: left;
+    margin-left: 1%;
+}
+
+#center-info {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#email {
+    margin-bottom: 10%;
+}
+
+#instagram {
+    margin-top: 10%;
+}
+
+#artists {
+    color: #49abf0;
+}
+
+a {
+    text-decoration: none;
+    color: #9e4b60;
+}
+
+a:hover {
+    color: #49abf0;
+}

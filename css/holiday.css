@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background: url(BACKGROUND.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #9e4b60;
+    text-align: center;
+    font-family: arial;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#top-left {
+    text-align: left;
+    margin-left: 1%;
+}
+
+#art {
+    width: 30%;
+    min-width: 360px;
+    height: auto;
+    border: rgb(56, 56, 56) solid 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+#art.fade {
+    opacity: 0;
+}
+
+#artist-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}
+
+
+#left-arrow {
+    position: absolute;
+    top: 47%;
+    left: 3%;
+    filter: invert(37%) sepia(10%) saturate(2664%) hue-rotate(294deg) brightness(92%) contrast(86%);
+}
+
+#right-arrow {
+    position: absolute;
+    top: 47%;
+    right: 3%;
+    filter: invert(37%) sepia(10%) saturate(2664%) hue-rotate(294deg) brightness(92%) contrast(86%);
+}
+
+#artists {
+    color: #49abf0;
+}
+
+a {
+    text-decoration: none;
+    color: #9e4b60;
+}
+
+a:hover {
+    color: #49abf0;
+}
+
+#left-arrow:hover, #right-arrow:hover {
+    filter: invert(77%) sepia(48%) saturate(5858%) hue-rotate(179deg) brightness(102%) contrast(88%);
+    cursor: pointer;
+}
+
+#art {
+    position: static;
+    transform: translate(0);
+    /* margin-top: 3%; */
+}
+
+#main {
+    margin-top: 4%;
+}
+
+#artist-text {
+    position: static;
+    transform: translate(0);
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 8px;
+        white-space: nowrap; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #art {
+        position: static;
+        transform: translate(0);
+        margin-top: 20px;
+    }
+
+    #artist-text {
+        position: static;
+        transform: translate(0);
+        margin-top: 20px;
+    }
+
+    #left-arrow {
+        position: static;
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+    
+    #right-arrow {
+        position: static;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    #main {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    #art {
+        position: static;
+        transform: translate(0);
+    }
+
+    #artist-text {
+        position: static;
+        transform: translate(0);
+    }
+
+    #left-arrow {
+        position: static;
+    }
+    
+    #right-arrow {
+        position: static;
+    }
+}
